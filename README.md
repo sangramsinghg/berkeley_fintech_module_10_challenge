@@ -34,8 +34,8 @@ This indicates, similar to k means clustering on original features, that a k val
 
 #### Analysis of K-means clusters with k=4 using Percentage Change of 1y vs 14d
 This indicates, similar to the K-means clustering on original features, that:
-* 1. ethlend (red) has a special cluster which has one of the lowest 14 day change and the highest 1 year change.
-* 2. celsius-degree-token (yellow) has a special cluster which has the highest 14 day change and the 2nd highest 1 year change.
+* ethlend (red) has a special cluster which has one of the lowest 14 day change and the highest 1 year change.
+* celsius-degree-token (yellow) has a special cluster which has the highest 14 day change and the 2nd highest 1 year change.
 
 ![Price Change Percentage 1y vs 14d 4k means over PCA components](Images/price_change_percentage_1y_14d_4k_means_3_pca.png)
 
