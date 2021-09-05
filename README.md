@@ -3,14 +3,14 @@ Optimize Crypto Investment portfolio using K-Means and PCA.
 
 ## Price Change Percentage for various Cryptos
 This indicates that there is something special about:
-* 1. ethlend
-* 2. celsius-degree-token
+* ethlend
+* celsius-degree-token
 
-They both have the two highest 1 year and 200 day price change percentage.
+They have the two highest 1 year and 200 day price change percentages.
 
 ![Price Change Percentage Cryptos](Images/price_change_percentage_cryptocurrencies.png)
 
-## K-Means:
+## K-Means Clustering:
 ### Using Original Features
 #### Inertia vs k using original features
 This indicates that a k value of 4 is optimal when we use the original features
@@ -19,8 +19,8 @@ This indicates that a k value of 4 is optimal when we use the original features
 
 #### Analysis of K-means clusters with k=4 using Percentage Change over 1y vs 14d
 This indicates that:
-* 1. ethlend (red) has a special cluster which has one of the lowest 14 day change and the highest 1 year change.
-* 2. celsius-degree-token (yellow) has a special cluster which has the largest 14 day change and the 2nd highest 1 year change.
+* ethlend (red) has a special cluster which has one of the lowest 14 day change and the highest 1 year change.
+* celsius-degree-token (yellow) has a special cluster which has the highest 14 day change and the 2nd highest 1 year change.
 
 ![Price Change Percentage 1y vs 14d 4k means](Images/price_change_percentage_1y_14d_4k_means.png)
 
@@ -30,19 +30,19 @@ This indicates that:
 #### Inertia vs k using PCA reduced features
 This also indicates that a k value of 4 is optimal when we reduced the original features to 3 using PCA.
 
-![Inertia vs k with 3 pca components](Images/inertia_k_with_3_pca_components.png)]
+![Inertia vs k with 3 pca components](Images/inertia_k_with_3_pca_components.png)
 
-##### Analysis of K-means clusters with k=4 using Percentage Change of 1y vs 14d
+#### Analysis of K-means clusters with k=4 using Percentage Change of 1y vs 14d
 This also indicates that similar to the K-means clustering with original features that:
 * 1. ethlend (red) has a special cluster which has one of the lowest 14 day change and the highest 1 year change.
-* 2. celsius-degree-token (yellow) has a special cluster which has the largest 14 day change and the 2nd highest 1 year change.
+* 2. celsius-degree-token (yellow) has a special cluster which has the highest 14 day change and the 2nd highest 1 year change.
 
 ![Price Change Percentage 1y vs 14d 4k means over PCA components](Images/price_change_percentage_1y_14d_4k_means_3_pca.png)
 
-##### Analysis of K-means clusters with k=4 using Principal Components 1 and 2
+#### Analysis of K-means clusters with k=4 using Principal Components 1 and 2
 This indicates that:
-* 1. ethlend (red) has a special cluster with the highest PCA1 value and lowest PCA2 value
-* 2. celsius-degree-token (yellow) has a special cluster which has the 2nd highest PCA1 value and the largest PCA2 value.
+* ethlend (red) has a special cluster with the highest PCA1 value and lowest PCA2 value
+* celsius-degree-token (yellow) has a special cluster which has the 2nd highest PCA1 value and the highest PCA2 value.
 
 ![Price Change Percentage 2 PCA components 4k means over PCA components](Images/price_change_percentage_pca_components_4k_means_3_pca.png)
 
