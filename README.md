@@ -28,12 +28,12 @@ This indicates that:
 89.5% of the total original variance is explained by the 3 components. 
 
 #### Inertia vs k using PCA reduced features
-This also indicates that a k value of 4 is optimal when we reduced the original features to 3 using PCA.
+This indicates, similar to k means clustering on original features, that a k value of 4 is optimal when we reduced the original features to 3 using PCA.
 
 ![Inertia vs k with 3 pca components](Images/inertia_k_with_3_pca_components.png)
 
 #### Analysis of K-means clusters with k=4 using Percentage Change of 1y vs 14d
-This also indicates that similar to the K-means clustering with original features that:
+This indicates, similar to the K-means clustering on original features, that:
 * 1. ethlend (red) has a special cluster which has one of the lowest 14 day change and the highest 1 year change.
 * 2. celsius-degree-token (yellow) has a special cluster which has the highest 14 day change and the 2nd highest 1 year change.
 
